@@ -2,43 +2,51 @@
 
 ### 🗣 About
 
-Hello everyone introducing is my app project that named Pomobro where it's sort of a flexible timer with alot of features could adjusted itselfs not only that also inside the App is available another benefits that could you try to helping in productivities yourself daily the app provides technic the most popular in the world it's named Pomodoro if your productivities less good Pomobro is solutions
+Hello everyone introducing is my app project that named Pomobro where it's sort of a flexible timer with alot of features could adjusted itselfs not only that also inside the App is available another benefits that could you try to helping in productivities yourself daily the app provides technic the most popular in the world it's named Pomodoro if your productivities less good Pomobro is solutions.
 
 ### ❓ To who?
 
-It match to learners, students, employes etc to boost their productivity
+It match to learners, students, employes etc to boost their productivity.
 
 ### 💡 Main benefits
 
-- ✅ Helping to increase productivity
-- ✅ The learn time or doing something more flexible
-- ✅ The App supports to all devices include mobile, tablet and desktop
+      - Helping to increase productivity.
+
+      - The learn time or doing something more flexible.
+
+      - The App supports to all devices include mobile, tablet and desktop.
 
 ## 📌 Features
 
-- ✅ Set a Pomobro timer and short & long break timers
-- ✅ Customize how long each timer runs for
-- ✅ See a circular progress bar that updates every minute and represents how far through their timer they are
-- ✅Customize the appearance of the app with the ability to set preferences for colors and fonts
-- ✅ Responsive Design
+      ✅ Set a Pomobro timer and short & long break timers.
+      ✅ Customize how long each timer runs for.
+      ✅ See a circular progress bar that updates every minute and represents how far through their timer they are.
+      ✅Customize the appearance of the app with the ability to set preferences for colors and fonts.
+      ✅ Responsive Design.
 
 ## 📦 Tech Stack
 
-- [![tailwindcss][TailwindCSS]][TailwindCSS-url]
-- [![javasscript][JavaScript]][JavaScript-url]
-- [![html][HTML]][HTML-url]
+[![tailwindcss][TailwindCSS]][TailwindCSS-url]
+
+[![javasscript][JavaScript]][JavaScript-url]
+
+[![html][HTML]][HTML-url]
 
 ## 🙋‍♂️ Author
 
-- NGIRFANUL MANGALI
-- EMAIL
+NGIRFANUL MANGALI
+
+EMAIL
 
 ## ☎ Contact
 
-- [![GitHub][GitHub]][GitHub-url]
-- [![Twitter][Twitter]][Twitter-url]
-- [![LinkedIn][LinkedIn]][LinkedIn-url]
-- [![Email][Email]][Email-url]
+[![GitHub][GitHub]][GitHub-url]
+
+[![Twitter][Twitter]][Twitter-url]
+
+[![LinkedIn][LinkedIn]][LinkedIn-url]
+
+[![Email][Email]][Email-url]
 
 ## 📄 License
 
