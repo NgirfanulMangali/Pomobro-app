@@ -1,0 +1,23 @@
+{
+  "name": "pomodoro-app",
+  "version": "1.0.0",
+  "description": "Hello everyone introducing is my app project that named Pomobro where it's sort of a flexible timer with alot of features could adjusted itselfs not only that also inside the App is available another benefits that could you try to helping in productivities yourself daily the app provides technic the most popular in the world it's named Pomodoro if your productivities less good Pomobro is solutions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NgirfanulMangali/Pomodoro-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NgirfanulMangali/Pomodoro-app/issues"
+  },
+  "homepage": "https://github.com/NgirfanulMangali/Pomodoro-app#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "tailwindcss": "^4.1.4"
+  }
+}
