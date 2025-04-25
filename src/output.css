@@ -1,4 +1,6 @@
 /*! tailwindcss v4.1.4 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Jua&display=swap');
+@layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
@@ -6,10 +8,20 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --font-weight-bold: 700;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-black-15-0\.9: rgba(21, 21, 39, 0.9);
-    --text-D-20: 1.25rem;
+    --color-darkblue-1E: #1E2140;
+    --color-young-orange: #F8736F;
+    --color-white-8D: #D8E0FF;
+    --color-gray-63: #636782;
+    --color-brown-3B: #3B263E;
+    --color-black-15: #151932;
+    --text-M-32: 2rem;
+    --text-M-15: 0.9375rem;
+    --font-Heebo: 'Heebo', sans-serif;
   }
 }
 @layer base {
@@ -158,13 +170,168 @@
   }
 }
 @layer utilities {
+  .m-0 {
+    margin: calc(var(--spacing) * 0);
+  }
+  .mx-4 {
+    margin-inline: calc(var(--spacing) * 4);
+  }
+  .mx-auto {
+    margin-inline: auto;
+  }
+  .box-border {
+    box-sizing: border-box;
+  }
   .contents {
     display: contents;
   }
-  .bg-black-15-0\.9 {
-    background-color: var(--color-black-15-0\.9);
+  .flex {
+    display: flex;
   }
-  .text-D-20 {
-    font-size: var(--text-D-20);
+  .table {
+    display: table;
+  }
+  .h-\[3\.75rem\] {
+    height: 3.75rem;
+  }
+  .h-\[40px\] {
+    height: 40px;
+  }
+  .h-\[60px\] {
+    height: 60px;
+  }
+  .w-\[21\.25rem\] {
+    width: 21.25rem;
+  }
+  .w-\[110px\] {
+    width: 110px;
+  }
+  .w-\[340px\] {
+    width: 340px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
+  }
+  .items-center {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  .rounded-\[30px\] {
+    border-radius: 30px;
+  }
+  .rounded-\[40px\] {
+    border-radius: 40px;
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .bg-black-15 {
+    background-color: var(--color-black-15);
+  }
+  .bg-darkblue-1E {
+    background-color: var(--color-darkblue-1E);
+  }
+  .bg-gray-63 {
+    background-color: var(--color-gray-63);
+  }
+  .p-0 {
+    padding: calc(var(--spacing) * 0);
+  }
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+  .pt-\[60px\] {
+    padding-top: 60px;
+  }
+  .pt-\[60rem\] {
+    padding-top: 60rem;
+  }
+  .pr-\[340px\] {
+    padding-right: 340px;
+  }
+  .pr-\[340rem\] {
+    padding-right: 340rem;
+  }
+  .font-Heebo {
+    font-family: var(--font-Heebo);
+  }
+  .text-M-15 {
+    font-size: var(--text-M-15);
+  }
+  .text-M-32 {
+    font-size: var(--text-M-32);
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .text-gray-63 {
+    color: var(--color-gray-63);
+  }
+  .text-white-8D {
+    color: var(--color-white-8D);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .hover\:bg-young-orange {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-young-orange);
+      }
+    }
+  }
+  .hover\:text-brown-3B {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-brown-3B);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
+}
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
+@layer properties {
+  @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
+    *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
   }
 }
