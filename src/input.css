@@ -3,6 +3,7 @@
 
 @theme {
     --color-darkblue-1E: #1E2140;
+    --color-darkblue-29: #292D52;
     --color-young-orange: #F8736F;
     --color-white-8D: #D8E0FF;
     --color-gray-63: #636782;
@@ -17,6 +18,7 @@
     --color-black-11-0.7: rgba(17, 25, 47, 0.7);
     --color-tosca-green: #6FF3F8;
     --color-young-purple: #D981F9;
+
 
     /* Mobile Text Sizes */
     --text-M-32: 2rem;
@@ -48,4 +50,8 @@
     --text-D-36: 2.25rem;
 
     --font-Heebo: 'Heebo', sans-serif;
+
+
+    --shadow-white-black: 70px 70px 70px rgba(0, 0, 0, 0.2), -70px -70px 70px rgba(38, 43, 85, 1);
+
 }
