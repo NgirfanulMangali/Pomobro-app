@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Heebo:wght@100..900&family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @import "tailwindcss";
 
 @theme {
@@ -50,6 +52,8 @@
     --text-D-36: 2.25rem;
 
     --font-Heebo: 'Heebo', sans-serif;
+    --font-crimson: 'Crimson Text', serif;
+    --font-Jua: 'Jua', sans-serif;
 
 
     --shadow-white-black: 70px 70px 70px rgba(0, 0, 0, 0.2), -70px -70px 70px rgba(38, 43, 85, 1);
