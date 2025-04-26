@@ -41,22 +41,22 @@
 
           <!-- a group input pomodoro, short break and long break-->
           <div>
-            <!--Pomodoro text-->
+            <!--Pomodoro text input-->
             <div class="flex justify-between items-center px-5 mt-5">
               <p class="text-gray-63 font-bold">pomodoro</p>
               <div class="flex">
-                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 " placeholder="25" />
+                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 focus:outline-none" placeholder="25" />
                 <div class="flex flex-col w-[72px] h-[35px] bg-white-EE rounded-tr-[10px] rounded-br-[10px] justify-center items-center">
                   <button class="ml-9"><img src="/images/keyboard_arrow_up.svg" alt="" class="w-4 h-4"></button>
                   <button class="ml-9"><img src="/images/keyboard_arrow_down.svg" alt="" class="w-4 h-4"></button>
                 </div>
               </div>
             </div>
-            <!--short break text-->
+            <!--short break text input-->
             <div class="flex justify-between items-center px-5 mt-5">
               <p class="text-gray-63 font-bold">short break</p>
               <div class="flex">
-                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 " placeholder="5" />
+                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 focus:outline-none" placeholder="5" />
                 <div class="flex flex-col w-[72px] h-[35px] bg-white-EE rounded-tr-[10px] rounded-br-[10px] justify-center items-center">
                   <button class="ml-9"><img src="/images/keyboard_arrow_up.svg" alt="" class="w-4 h-4"></button>
                   <button class="ml-9"><img src="/images/keyboard_arrow_down.svg" alt="" class="w-4 h-4"></button>
@@ -64,11 +64,11 @@
               </div>
               </div>
             </div>
-            <!--long break text-->
+            <!--long break text input-->
             <div class="flex justify-between items-center px-5 mt-5 ">
               <p class="text-gray-63 font-bold">long break</p>
               <div class="flex">
-                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 " placeholder="15" />
+                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 focus:outline-none" placeholder="15" />
                 <div class="flex flex-col w-[72px] h-[35px] bg-white-EE rounded-tr-[10px] rounded-br-[10px] justify-center items-center">
                   <button class="ml-9"><img src="/images/keyboard_arrow_up.svg" alt="" class="w-4 h-4"></button>
                   <button class="ml-9"><img src="/images/keyboard_arrow_down.svg" alt="" class="w-4 h-4"></button>
@@ -80,15 +80,15 @@
           <!--Font text-->
             <p class="text-M-14 text-black-15-0.9 font-bold tracking-[0.2em] text-center mt-3">FONT</p>
             <div class="flex justify-center items-center mt-5 mb-5 gap-10">
-              <div class="bg-white-EE w-11 h-11 rounded-full ">
-                <p class="flex justify-center items-center h-full text-gray-63 font-bold">Aa</p>
-              </div>
-              <div class="bg-white-EE w-11 h-11 rounded-full text-gray-63 font-bold">
-                <p class="flex justify-center items-center h-full font-crimson">Aa</p>
-              </div>
-              <div class="bg-white-EE w-11 h-11 rounded-full text-gray-63 font-bold">
-                <p class="flex justify-center items-center h-full font-Jua">Aa</p>
-              </div>
+              <button class="bg-white-EE w-11 h-11 rounded-full  hover:bg-darkblue-1E">
+                <p class="flex justify-center items-center h-full text-gray-63 font-bold hover:text-white-EE">Aa</p>
+              </button>
+              <button class="bg-white-EE w-11 h-11 rounded-full text-gray-63 font-bold hover:bg-darkblue-1E">
+                <p class="flex justify-center items-center h-full font-crimson hover:text-white-EE">Aa</p>
+              </button>
+              <button class="bg-white-EE w-11 h-11 rounded-full text-gray-63 font-bold hover:bg-darkblue-1E">
+                <p class="flex justify-center items-center h-full font-Jua hover:text-white-EE">Aa</p>
+              </button>
             </div>
             <hr class="border-gray-DE border-1 w-[295px]  mx-auto " />
 
@@ -103,9 +103,13 @@
               </div>
             </div>
 
-            <button class="w-[125px] h-[45px] rounded-[30px] bg-young-orange text-M-16 font-bold text-white-FF absolute left-27 -bottom-5">Apply</button>
-             
-           
+            <div class="w-[125px] h-[45px] rounded-[30px] bg-young-orange   absolute left-27 -bottom-5">
+                <button class="flex justify-center items-center mx-auto mt-3">
+                <p class="text-M-16 font-bold text-white-FF ">Apply</p>
+                </button>
+            </div>
+            
+          
         </div> 
 
         <!--icon setting-->

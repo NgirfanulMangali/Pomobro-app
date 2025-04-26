@@ -28,6 +28,7 @@
     --color-black-15-0\.9: rgba(21, 21, 39, 0.9);
     --color-gray-DE: #DEDEDE;
     --color-white-FF: #FFFFFF;
+    --color-black-11-0\.7: rgba(17, 25, 47, 0.7);
     --color-tosca-green: #6FF3F8;
     --color-young-purple: #D981F9;
     --text-M-32: 2rem;
@@ -227,6 +228,12 @@
   .my-9 {
     margin-block: calc(var(--spacing) * 9);
   }
+  .my-auto {
+    margin-block: auto;
+  }
+  .mt-1 {
+    margin-top: calc(var(--spacing) * 1);
+  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -262,6 +269,9 @@
   }
   .flex {
     display: flex;
+  }
+  .hidden {
+    display: none;
   }
   .table {
     display: table;
@@ -406,6 +416,10 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
+  .border-0 {
+    border-style: var(--tw-border-style);
+    border-width: 0px;
+  }
   .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -538,6 +552,20 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .hover\:bg-black-11-0\.7 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-black-11-0\.7);
+      }
+    }
+  }
+  .hover\:bg-darkblue-1E {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-darkblue-1E);
+      }
+    }
+  }
   .hover\:bg-young-orange {
     &:hover {
       @media (hover: hover) {
@@ -550,6 +578,26 @@
       @media (hover: hover) {
         color: var(--color-brown-3B);
       }
+    }
+  }
+  .hover\:text-white-EE {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white-EE);
+      }
+    }
+  }
+  .hover\:text-white-FF {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white-FF);
+      }
+    }
+  }
+  .focus\:outline-none {
+    &:focus {
+      --tw-outline-style: none;
+      outline-style: none;
     }
   }
 }
