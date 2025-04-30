@@ -11,18 +11,21 @@ document.getElementById('close').addEventListener('click', () => {
 })
 
 
-// timer 
-
+// timer
 let timer;
-let timeLift = 0.1 * 60;
 let isRunning = false;
 
-function updateTimer() {
-    const minutes = Math.floor(timeLift / 60).toString().padStart(2, "0");
-    const seconds = Math.floor(timeLift % 60).toString().padStart(2, "0");
+function updateTimer(waktu) {
 
-    if (timeLift > 0) {
-        timeLift--;
+    let result = waktu * 60;
+
+    const minutes = Math.floor(result / 60).toString().padStart(2, "0");
+
+    const seconds = Math.floor(result % 60).toString().padStart(2, "0");
+
+
+    if (result > 0) {
+        result--;
     } else {
         clearInterval(timer);
         alert('the timer done!');
@@ -31,7 +34,19 @@ function updateTimer() {
 
     document.getElementById("numberTimer").innerText = (`${minutes}:${seconds}`)
 
+    return result;
 }
+// popup
+const pomoInput = document.getElementById("pomodoroInput")
+
+document.getElementById("apply").addEventListener('click', () => {
+    const test = pomoInput.value;
+    updateTimer
+    document.getElementById("numberTimer").innerHTML = `${test}:00`;
+
+})
+
+
 // Start Button
 document.getElementById("start").addEventListener(
     'click', () => {
@@ -47,5 +62,11 @@ document.getElementById("start").addEventListener(
 
     }
 )
+
+
+
+
+
+
 
 

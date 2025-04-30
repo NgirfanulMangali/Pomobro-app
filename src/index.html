@@ -16,13 +16,13 @@
         </div>  
         
         <!--Timer Section-->
-        <div class="mx-auto mt-32 w-[350px] h-[350px] rounded-full items-center bg-radial-[at_20%_25%] from-darkblue-1E      to-darkblue-29 to-85% shadow-white-black relative">
+        <div class="mx-auto mt-32 w-[350px] h-[350px] rounded-full items-center bg-radial-[at_20%_25%] from-darkblue-1E      to-darkblue-29 to-85% shadow-white-black relative animate-pulse">
           <div class="absolute inset-0 m-auto w-[300px] h-[300px] rounded-full bg-darkblue-1E">
             <div class="flex flex-col justify-center items-center h-full">
                 <span class=" font-extrabold text-white-8D text-M-64" id="numberTimer">
-                17:59
+                
                 </span>
-                <button class="text-white-8D text-M-20 font-mediums tracking-[0.4em]" id="start">
+                <button class="text-white-8D text-M-20 font-mediums tracking-[0.4em]  transition transform duration-200 active:scale-95 " id="start">
                 START
                 </button>
             </div>
@@ -46,7 +46,7 @@
             <div class="flex justify-between items-center px-5 mt-5">
               <p class="text-gray-63 font-bold">pomodoro</p>
               <div class="flex">
-                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 focus:outline-none" placeholder="25" />
+                <input type="text" class="w-[40px] h-[35px] bg-white-EE rounded-tl-[10px] rounded-bl-[10px] text-center text-M-12 font-bold text-black-15-0.9 focus:outline-none"   placeholder="25" id="pomodoroInput" />
                 <div class="flex flex-col w-[72px] h-[35px] bg-white-EE rounded-tr-[10px] rounded-br-[10px] justify-center items-center">
                   <button class="ml-9"><img src="/images/keyboard_arrow_up.svg" alt="" class="w-4 h-4"></button>
                   <button class="ml-9"><img src="/images/keyboard_arrow_down.svg" alt="" class="w-4 h-4"></button>
@@ -103,9 +103,9 @@
               <div class="bg-young-purple w-11 h-11 rounded-full">
               </div>
             </div>
-
+            <!--Apply Button-->
             <div class="w-[125px] h-[45px] rounded-[30px] bg-young-orange   absolute left-27 -bottom-5">
-                <button class="flex justify-center items-center mx-auto mt-3">
+                <button class="flex justify-center items-center mx-auto mt-3" id="apply">
                 <p class="text-M-16 font-bold text-white-FF ">Apply</p>
                 </button>
             </div>
@@ -120,8 +120,8 @@
         </button>
       </div>
    
+      
+      <script src="/script/index.js"></script>
     
-      <script src="/script/index.js">
-      </script>
   </body>
 </html>
