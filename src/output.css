@@ -12,12 +12,18 @@
       "Courier New", monospace;
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-green-400: oklch(79.2% 0.209 151.711);
+    --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-700: oklch(52.7% 0.154 150.069);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
+    --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-darkblue-1E: #1E2140;
@@ -243,6 +249,9 @@
   .mt-3 {
     margin-top: calc(var(--spacing) * 3);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
   }
@@ -376,6 +385,9 @@
     --tw-translate-y: calc(calc(1/2 * 100%) * -1);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
+  .animate-pulse {
+    animation: var(--animate-pulse);
+  }
   .resize {
     resize: both;
   }
@@ -396,6 +408,9 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .rounded {
+    border-radius: 0.25rem;
   }
   .rounded-\[20px\] {
     border-radius: 20px;
@@ -451,6 +466,9 @@
   .bg-green-400 {
     background-color: var(--color-green-400);
   }
+  .bg-green-500 {
+    background-color: var(--color-green-500);
+  }
   .bg-tosca-green {
     background-color: var(--color-tosca-green);
   }
@@ -490,6 +508,9 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .text-center {
     text-align: center;
   }
@@ -501,6 +522,14 @@
   }
   .font-crimson {
     font-family: var(--font-crimson);
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-M-12 {
     font-size: var(--text-M-12);
@@ -552,6 +581,9 @@
   }
   .text-gray-63 {
     color: var(--color-gray-63);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .text-white-8D {
     color: var(--color-white-8D);
@@ -758,6 +790,11 @@
   syntax: "*";
   inherits: false;
   initial-value: solid;
+}
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
 }
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
